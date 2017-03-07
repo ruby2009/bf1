@@ -13,8 +13,67 @@
  *= require_tree .
  *= require_self
  */
+
 body {
   background-image: url("https://i.ytimg.com/vi/XIXYk6xIhZs/maxresdefault.jpg");
   background-position: center top;
   background-repeat: no-repeat;
+}
+
+h1  {
+  margin-left: 8em;
+}
+
+h2  {
+  margin-left: 100px;
+}
+
+.sidemenu {
+  position: fixed;
+  margin-bottom: -5000px;
+  padding-bottom: 5000px;
+  height: 100%;
+  left: 0;
+  top: 0%;
+  width: 8em;
+  margin-top: -2.5em;
+  padding-top: 5em;
+  background: rgba(192, 192, 192, 0.6);
+}
+
+.top_paragraph {
+  width: 550px;
+  float: left;
+  margin-left: 10em;
+  font-size: 19px;
+}
+
+ul  {
+  margin: 50px 0px 0px 0px;
+}
+
+ul li a {
+  color: black;
+  font-weight: bolder;
+}
+
+#_giphy_tv {
+  float: right;
+  height: 500px;
+  width: 500px;
+}
+
+.twitter-timeline {
+  margin-left: 13em;
+}
+
+.stats {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+}
+
+footer {
+  text-align: center;
+  margin-top: 15px;
 }

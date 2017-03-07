@@ -11,7 +11,63 @@
 
   <body>
     <h1>The Great War, Relived</h1>
-    
+    <h3>Video game love</h3>
+    <ul class=sidemenu>
+      <li><a href="https://battlefieldtracker.com/bf1/profile/xbox/ruby2009">Real Time Stats</a>
+      <li><a href="https://www.battlefield.com/games/battlefield-1">Official Site</a>
+    </ul>
+
+    <div class="top_paragraph">
+      <p>Battlefield 1 is a first person shooter that explores World War One and the tragedies that took place. Relive battles that took place in Iraq, Isreal, Sinai, France, Belgium, and Italy. Battlefield 1 is a game that I enjoy playing with my brother, cousins, and friends all over the world. Battlefiled 1 is our chance to hangout, catch up with each other and spend time together while being seperated by thousands of miles.</p>
+    </div>
+
+    <div id="_giphy_tv"></div>
+
+    <a class="twitter-timeline"
+      data-width="500"
+      data-height="425"
+      data-chrome="nofooter noborders dark"
+      data-theme="dark"
+      href="https://twitter.com/Battlefield"
+      >Tweets by Battlefield
+    </a>
+
+    <div class="stats">
+      <h2>Kills:</h2>
+      <h2>Wins:</h2>
+    </div>
+
+    <footer>
+      A ruby2009 production
+    </footer>
 
   </body>
 </html>
+
+
+<script>
+    var _giphy_tv_tag="battlefield 1";
+    var g = document.createElement('script'); g.type = 'text/javascript'; g.async = true;
+    g.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'giphy.com/static/js/widgets/tv.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(g, s);
+</script>
+
+<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+<script>
+var request = new XMLHttpRequest();
+
+request.open('GET', '/Stats/BasicStats?platform=1&displayName=ruby2009&game=tunguska');
+
+request.setRequestHeader('TRN-Api-Key', 'a2a246d9-52ef-4bc4-a89d-ac5ae97041d1');
+
+request.onreadystatechange = function () {
+  if (this.readyState === 4) {
+    console.log('Status:', this.status);
+    console.log('Headers:', this.getAllResponseHeaders());
+    console.log('Body:', this.responseText);
+  }
+};
+
+request.send('kills');
+</script>
